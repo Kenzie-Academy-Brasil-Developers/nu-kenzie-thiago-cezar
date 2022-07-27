@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+}
+:root {
+  --gray2: rgba(233, 236, 239, 1);
+  --gray3: rgba(52, 58, 64, 1);
+  --gray4: rgb(33, 37, 41);
+  --white: rgba(255, 255, 255, 1);
+  --color-primary: rgba(253, 55, 126, 1);
+}
+.home1 {
+  font-family: Nunito;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--gray4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+.page1 > figure {
+  display: none;
+}
+.page1 > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+.page1 > div > img {
+  width: 7.6rem;
+  height: 1.2rem;
+}
+
+.page1 > div > h1 {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 25px;
+}
+.page1 > div > p {
+  font-size: 16px;
+  color: var(--white);
+}
+.page1 > div > button {
+  width: 15.06rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--color-primary);
+  font-size: 16px;
+  cursor: pointer;
+}
+.page1 > div > button:hover {
+  transition: 0.1s;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 736px) {
+  .page1 > figure {
+    display: flex;
+  }
+  .page1 > div > h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page1 > figure {
+    display: flex;
+  }
+  .page1 > div > h1 {
+    font-size: 38px;
+  }
+}
+
+.home2 {
+  font-family: Nunito;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.home2 > main > header {
+  padding-top: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 5px 5px var(--gray2);
+  padding-bottom: 10px;
+}
+
+.home2 > main > header > button {
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--gray2);
+  width: 64px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray3);
+  cursor: pointer;
+}
+
+.home2 > main > header > button:hover {
+  color: var(--white);
+  background-color: var(--color-primary);
+}
+.home2 > main >div> section > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--gray2);
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.home2 > main >div> section > form > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.home2 > main >div> section > form > div > p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray3);
+  align-self: center;
+}
+
+.home2 > main >div> section > form > div > input {
+  font-size: 16px;
+  height: 52px;
+  color: var(--gray3);
+  width: 90%;
+  border: none;
+  padding-left: 15px;
+}
+.home2 > main >div> section > form > div > select {
+  font-size: 16px;
+  height: 52px;
+  color: var(--gray3);
+  width: 50%;
+  border: none;
+  padding-left: 15px;
+}
+
+.home2 > main >div> section > form > button {
+  font-size: 16px;
+  height: 52px;
+  color: var(--gray3);
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.home2 > main >div> section > form > button:hover {
+  color: var(--white);
+  background-color: var(--color-primary);
+}
+.home2 > main >div> section > span > div {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  margin-top: 10px;
+  border: 1px solid var(--gray2);
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 15px 0 15px;
+}
+.home2 > main >div> section > span {
+  width: 100vh;
+}
+.home2 > main >div> section > span> div>h2{
+font-size: 18px;
+}
+.home2 > main >div> section > form > div > span {
+  display: none;
+}
+
+.home2 > main >div> section + section {
+  width: 100vw;
+}
+
+.home2 > main >div> section + section > ul {
+  list-style: none;
+}
+
+.home2 > main >div> section + section > ul > li > img {
+  list-style: none;
+  width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+  .page2 > div{
+    display: flex;
+    width: 100vw;
+  }
+  .page2 > div > section{
+    width: 80%;
+  }
+  .page2 > div > section + section > ul{
+    width: 100%;
+  }
+}

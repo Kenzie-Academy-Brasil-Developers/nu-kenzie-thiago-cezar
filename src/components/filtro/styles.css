@@ -1,0 +1,47 @@
+:root {
+    --gray1: rgba(248, 249, 250, 1);
+    --gray2: rgba(233, 236, 239, 1);
+    --gray3: rgba(52, 58, 64, 1);
+    --gray4: rgb(33, 37, 41);
+    --white: rgba(255, 255, 255, 1);
+    --color-primary: rgba(253, 55, 126, 1);
+  }
+
+.filtro > div {
+  display: flex;
+  gap: 10px;
+}
+.filtro > div > button{
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--gray2);
+  color: var(--gray3);
+  font-weight: 600;
+}
+.filtro > div > button:focus{
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+.listaComp{
+    padding-left: 20px;
+    width: 100vw;
+}
+.listaComp > li{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gray1);
+}
+.listaComp > li > div > h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+.listaComp > li > div > p{
+    font-size: 12px;
+
+}
